@@ -433,7 +433,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.65
+  near clip plane: 0
   far clip plane: 1000
   field of view: 34
   orthographic: 1
@@ -462,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -2.31, z: -10}
+  m_LocalPosition: {x: 1, y: -2.31, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1199,6 +1199,7 @@ GameObject:
   - component: {fileID: 2094022540}
   - component: {fileID: 2094022539}
   - component: {fileID: 2094022542}
+  - component: {fileID: 2094022543}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -1228,7 +1229,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094022537}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 693322a3bb3c82a478638d139a9452dd, type: 3}
   m_Name: 
@@ -3516,6 +3517,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleCanvas
   canvas: {fileID: 756983759}
+--- !u!114 &2094022543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094022537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92441de6a8627444faa7e8708c758b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeTile
+  Tilemap: {fileID: 2094022541}
+  newTile: {fileID: 11400000, guid: 6c9a903a317726d4fa299b235004fab7, type: 2}
+  oldTile: {fileID: 11400000, guid: 04efab874320f4845b1eee95e5f2ec3a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
